@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+
+  <style data="slider" type="text/css"></style>
+  
+  <title>Calculator app</title>
+
+  <script defer src="script.js"></script>
+  
+</head>
+<body>
+
+  <div class="container">
+
+    <header class="calcTheme">
+      <span class="calcText">calc</span>
+        <div class="changingTheme">
+            <div class="emptyspace"></div>
+            <div class="flexbox">
+              <span class="buttonNumber">1</span>
+              <span class="buttonNumber">2</span>
+              <span class="buttonNumber">3</span>
+            </div>
+            <div class="theme"><div>THEME</div></div>
+            <input class="slider" type="range" id="vol" name="vol" value="1" min="1" max="3">
+        </div>
+    </header>
+
+    <main>
+
+      <input type="text" id="inputField">
+
+      <article>
+        <div class="buttons"> 
+          <div class="button">7</div>
+          <div class="button">8</div>
+          <div class="button">9</div>
+          <div class="button del">DEL</div>
+          <div class="button">4</div>
+          <div class="button">5</div>
+          <div class="button">6</div>
+          <div class="button">+</div>
+          <div class="button">1</div>
+          <div class="button">2</div>
+          <div class="button">3</div>
+          <div class="button">-</div>
+          <div class="button">.</div>
+          <div class="button">0</div>
+          <div class="button">/</div>
+          <div class="button">*</div>
+          <div class="button reset">RESET</div>
+          <div class="button equal" id="equal">=</div>
+        </div>
+      </article>
+
+    </main>
+
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Aleksis Lesieur</a>
+  </div> -->
+
+</body>
+</html>

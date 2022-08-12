@@ -1,99 +1,92 @@
-:root {
-  /*### Theme 1 */
+body.theme-1 {
+  
+  /* #### Text */
+
+  --calcTheme-text: white; /* calc, theme and slider number colors */
+  --equal-sign-text: white; /* equal sign text color */
 
   /*#### Backgrounds */
 
-  --very-dark-desaturated-blue-main-background: hsl(222, 26%, 31%); /* main background 1*/
-  --Very-dark-desaturated-blue-toggle-background-keypad-background: hsl(223, 31%, 20%); /* button background 1 */ 
-  --very-dark-desaturated-blue-screen-background: hsl(224, 36%, 15%); /* input background 1*/
+  --main-bg: hsl(222, 26%, 31%); /* main background 1*/
+  --btn-bg: hsl(223, 31%, 20%); /* button background 1 */ 
+  --input-bg: hsl(224, 36%, 15%); /* input background 1*/
 
   /*#### Keys */
 
-  --Desaturated-dark-blue-key-background: hsl(225, 21%, 49%); /* del and reset background color 1*/
-  --Desaturated-dark-blue-key-shadow: hsl(224, 28%, 35%); /* del and reset shadow color 1*/
+  --del-reset-bg: hsl(225, 21%, 49%); /* del and reset background color 1*/
+  --del-reset-shadow: hsl(224, 28%, 35%); /* del and reset shadow color 1*/
+  --del-reset-hover: hsl(225, 51%, 76%); /* del and reset hover */
 
-  --Red-key-background-toggle: hsl(6, 63%, 50%); /* theme slider and '=' background color 1*/ 
-  --Dark-red-key-shadow: hsl(6, 70%, 34%); /* theme slider and '=' sign shadow color 1*/
+  --slider-equal-btn: hsl(6, 63%, 50%); /* theme slider and equal background color 1*/ 
+  --slider-equal-shadow: hsl(6, 70%, 34%); /* theme slider and equal sign shadow color 1*/
+  --slider-equal-hover: hsl(6, 93%, 67%); /* theme slider and equal sign hover */
 
-  --Light-grayish-orange-key-background: hsl(30, 25%, 89%); /* button background color 1*/
-  --Grayish-orange-key-shadow: hsl(28, 16%, 65%); /* button shadow color 1 */
-
-  /* added my own for hover effect*/
-
-  --hover-key-del-reset-theme-1: hsl(225, 51%, 76%); /* del and reset hover */
-  --hover-key-equal-btn-theme-1: hsl(6, 93%, 67%); /* equal sign hover */
-
-  /* #### Text */
-
-  --Very-dark-grayish-blue: hsl(221, 14%, 31%); 
-
-  /* Theme 1 ends here */
-
-  /*### Theme 2 */
-
-  /* #### Backgrounds */
-
-  --Light-gray-main-background: hsl(0, 0%, 90%); /* main background 2*/
-  --Grayish-red-toggle-background-keypad-background: hsl(0, 5%, 81%); /* button background 2*/ 
-  --Very-light-gray-screen-background: hsl(0, 0%, 93%); /* input background 2*/
-
-  /* #### Keys */
-
-  --Dark-moderate-cyan-key-background: hsl(185, 42%, 37%); /* del and reset background color 2*/
-  --Very-dark-cyan-key-shadow: hsl(185, 58%, 25%); /* del and reset shadow color 2*/
-
-  --Orange-key-background-toggle: hsl(25, 98%, 40%); /* theme slider and '=' background color 2*/
-  --Dark-orange-key-shadow: hsl(25, 99%, 27%); /* theme slider and '=' shadow color 2*/
-
-  --Light-grayish-yellow-key-background: hsl(45, 7%, 89%); /* button background color 2*/
-  --Dark-grayish-orange-key-shadow: hsl(35, 11%, 61%); /* button shadow color 2*/
-
-  /* added my own for hover effect*/
-
-  --hover-key-del-reset-theme-2: hsl(185, 40%, 56%); /* del and reset hover */
-  --hover-key-equal-btn-theme-2: hsl(25, 100%, 61%); /* equal sign hover */
-
-  /* #### Text */
-
-  --Very-dark-grayish-yellow: hsl(60, 10%, 19%); /* entire text color */
-
-  /*### Theme 2 ends here*/
-
-  /* ### Theme 3 */
-
-  /* #### Backgrounds */
-
-  --Very-dark-violet-main-background: hsl(268, 75%, 9%); /* main background 3*/
-  --Very-dark-violet-toggle-background-keypad-background-screen-background: hsl( 268, 71%, 12%); /* button and input background 3*/ 
-
-  /* #### Keys */
-
-  --Dark-violet-key-background: hsl(281, 89%, 26%); /* del and reset background color 3*/
-  --Vivid-magenta-key-shadow: hsl(285, 91%, 52%); /* del and reset shadow color 3*/
-
-  --Pure-cyan-key-background-toggle: hsl(176, 100%, 44%); /* theme slider and equal button color 3*/
-  --Soft-cyan-key-shadow: hsl(177, 92%, 70%); /* theme slider and equal shadow color 3*/
-
-  --Very-dark-violet-key-background: hsl(268, 47%, 21%); /* button background color 3*/
-  --Dark-magenta-key-shadow: hsl(290, 70%, 36%); /* button shadow color 3*/
-
-  /* added my own for hover effect*/
-
-  --hover-key-main-btns-theme-3: hsl(268, 54%, 44%); /* main buttons hover */
-  --hover-key-del-reset-theme-3: hsl(280, 56%, 44%); /* del and reset hover */
-  --hover-key-equal-btn-theme-3: hsl(176, 100%, 79%); /* equal sign hover */
-
-  /* #### Text */
-
-  --Light-yellow: hsl(52, 100%, 62%);
-  --Very-dark-blue: hsl(198, 20%, 13%);
-
-  /* ## Typography */
-
-  /* ### Font */
-
-  /* font-family: 'Spartan', sans-serif; */
+  --btns-bg: hsl(30, 25%, 89%); /* clickable buttons background color 1*/
+  --btns-text: hsl(221, 14%, 31%); /* buttons text color 1 */
+  --btns-shadow: hsl(28, 16%, 65%); /* buttons shadow color 1 */
+  --btns-hover: white; /* buttons hover color 1 */
 }
+
+body.theme-2 {
+
+  /* #### Text */
+  
+  --calcTheme-text: hsl(60, 10%, 19%); /* calc, theme and slider number colors */
+  --equal-sign-text: white; /* equal sign text color */
+
+  /* #### Backgrounds */
+
+  --main-bg: hsl(0, 0%, 90%); /* main background 2*/
+  --btn-bg: hsl(0, 5%, 81%); /* button background 2*/ 
+  --input-bg: hsl(0, 0%, 93%); /* input background 2*/
+
+  /* #### Keys */
+
+  --del-reset-bg: hsl(185, 42%, 37%); /* del and reset background color 2*/
+  --del-reset-shadow: hsl(185, 58%, 25%); /* del and reset shadow color 2*/
+  --del-reset-hover: hsl(185, 40%, 56%); /* del and reset hover */
+
+  --slider-equal-btn: hsl(25, 98%, 40%); /* theme slider and equal background color 2*/
+  --slider-equal-shadow: hsl(25, 99%, 27%); /* theme slider and equal shadow color 2*/
+  --slider-equal-hover: hsl(25, 100%, 61%); /* theme slider and equal sign hover */
+
+  --btns-bg: hsl(45, 7%, 89%); /* clickable buttons background color 2*/
+  --btns-text: hsl(60, 10%, 19%); /* buttons text color 2 */
+  --btns-shadow: hsl(35, 11%, 61%); /* buttons shadow color 2*/
+  --btns-hover: white; /* buttons hover color 2 */
+
+}
+
+body.theme-3 {
+
+  /* #### Text */
+
+  --calcTheme-text: hsl(52, 100%, 62%);
+  --equal-sign-text: hsl(198, 20%, 13%);
+
+  /* #### Backgrounds */
+
+  --main-bg: hsl(268, 75%, 9%); /* main background 3*/
+  --btn-bg: hsl(268, 71%, 12%); /* buttons and input background 3*/ 
+  --input-bg: hsl(268, 71%, 12%); /* buttons and input background 3*/ 
+
+  /* #### Keys */
+
+  --del-reset-bg: hsl(281, 89%, 26%); /* del and reset background color 3*/
+  --del-reset-shadow: hsl(285, 91%, 52%); /* del and reset shadow color 3*/
+  --del-reset-hover: hsl(280, 56%, 44%); /* del and reset hover */
+
+  --slider-equal-btn: hsl(176, 100%, 44%); /* theme slider and equal button color 3*/
+  --slider-equal-shadow: hsl(177, 92%, 70%); /* theme slider and equal shadow color 3*/
+  --slider-equal-hover: hsl(176, 100%, 79%); /* theme slider and equal sign hover */
+
+  --btns-bg: hsl(268, 47%, 21%); /* clickable buttons background color 3*/
+  --btns-text: hsl(52, 100%, 62%); /* buttons text color 3 */
+  --btns-shadow: hsl(290, 70%, 36%); /* buttons shadow color 3*/
+  --btns-hover: hsl(268, 54%, 44%); /* buttons hover color 3*/
+
+}
+
 *,
 ::before,
 ::after {
@@ -102,10 +95,10 @@
   box-sizing: border-box;
 }
 body {
-  background-color: var(--very-dark-desaturated-blue-main-background);
+  background-color: var(--main-bg);
 }
 .container {
-  color: hsl(0, 0%, 90%);
+  /* color: var(--theme-2-color-1); */
   font-family: "Spartan", sans-serif;
   font-weight: 700;
   max-width: 540px;
@@ -123,7 +116,7 @@ span {
   font-family: "Spartan", sans-serif;
   font-size: 2em;
   margin-top: 7px;
-  color: white;
+  color: var(--calcTheme-text);
 }
 .changingTheme {
   display: grid;
@@ -140,13 +133,14 @@ span {
   text-align: center;
 }
 .theme {
-  color: white;
+  color: var(--calcTheme-text);
   font-size: 0.75em;
   display: flex;
   align-items: center;
 }
 
 .buttonNumber {
+  color: var(--calcTheme-text);
   font-size: 12px;
   font-family: "Spartan", sans-serif;
   font-weight: 700;
@@ -156,25 +150,27 @@ span {
 .slider {
   -webkit-appearance: none;
 }
+
 /* manipulating the little circle inside the slider */
+
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  background-color: var(--Red-key-background-toggle);
+  background-color: var(--slider-equal-btn);
   border-radius: 50%;
   width: 16px;
   height: 16px;
 }
-/* manipulating the slider position and size */
+/* 
+manipulating the slider position and size */
+
 input[type="range"] {
   margin: 0 auto;
   min-height: 20px;
   width: 72px;
   border-radius: 20px;
   padding: 0 4px;
-  background-color: var(
-    --Very-dark-desaturated-blue-toggle-background-keypad-background
-  );
+  background-color: var(--btn-bg);
   cursor: pointer;
 }
 
@@ -182,12 +178,12 @@ input[type="range"] {
   margin-top: 76px;
   min-height: 128px;
   width: 100%;
-  background-color: var(--very-dark-desaturated-blue-screen-background);
+  background-color: var(--input-bg);
   font-size: 3em;
   font-family: "Spartan", sans-serif;
   font-weight: 700;
   direction: ltr;
-  color: white;
+  color: var(--calcTheme-text);
   border-radius: 10px;
   border: none;
   text-align: end;
@@ -207,9 +203,7 @@ article {
   max-height: 480px;
   padding: 12px 0;
   border-radius: 10px;
-  background-color: var(
-    --Very-dark-desaturated-blue-toggle-background-keypad-background
-  );
+  background-color: var(--btn-bg);
 }
 .button {
   display: flex;
@@ -218,51 +212,44 @@ article {
   max-width: 101px;
   width: 20%;
   min-height: 64px;
-  color: var(--Very-dark-grayish-blue);
-  background-color: var(--Light-grayish-orange-key-background);
+  color: var(--btns-text);
+  background-color: var(--btns-bg);
   margin: 2.5% 2%;
   font-size: 2em;
   font-family: "Spartan", sans-serif;
   font-weight: 700;
   border-radius: 10px;
-  box-shadow: 0 4px 0 var(--Grayish-orange-key-shadow);
+  box-shadow: 0 4px 0 var(--btns-shadow);
 }
 .button:hover {
-  background-color: white;
+  background-color: var(--btns-hover);
   cursor: pointer;
 }
-.del,
-.reset,
-.equal {
-  color: white;
-  font-size: 20px;
-}
+
 .reset,
 .equal {
   max-width: 840px;
   width: 42%;
-}
-.reset {
-  margin: 2.5% 2%;
-}
-.equal {
   margin: 2.5% 2%;
 }
 .reset,
 .del {
-  background-color: var(--Desaturated-dark-blue-key-background);
-  box-shadow: 0 4px 0 var(--Desaturated-dark-blue-key-shadow);
+  color: white;
+  font-size: 20px;
+  background-color: var(--del-reset-bg);
+  box-shadow: 0 4px 0 var(--del-reset-shadow);
 }
 .equal {
-  background-color: var(--Red-key-background-toggle);
-  box-shadow: 0 4px 0 var(--Dark-red-key-shadow);
+  color: var(--equal-sign-text);
+  background-color: var(--slider-equal-btn);
+  box-shadow: 0 4px 0 var(--slider-equal-shadow);
 }
 .del:hover,
 .reset:hover {
-  background-color: var(--hover-key-del-reset-theme-1);
+  background-color: var(--del-reset-hover);
 }
 .equal:hover {
-  background-color: var(--hover-key-equal-btn-theme-1);
+  background-color: var(--slider-equal-hover);
 }
 
 

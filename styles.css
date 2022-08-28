@@ -191,7 +191,7 @@ input[type="range"] {
   border-radius: 10px;
   border: none;
   text-align: end;
-  padding-right: 34px;
+  padding-right: 6%;
 }
 #inputField:focus {
   outline: none;
@@ -264,5 +264,8 @@ article {
 @media only screen and (max-width: 576px) {
   .equal, .reset {
     width: 44%;
+  }
+  #inputField {
+    padding-right: 3%;
   }
 }

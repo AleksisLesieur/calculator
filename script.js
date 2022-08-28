@@ -75,3 +75,19 @@ function clickHandler(event) {
   let b = Number(event.target.value);
   return document.body.classList.add(`theme-${b}`);
 }
+
+let human = function (gender, age) {
+  this.gender = gender;
+  this.age = age;
+
+  //never do this
+  this.calcBirthYear = function () {
+    return 2022 - this.age;
+  };
+};
+
+let Alex = new human("male", 27);
+
+// human.prototype.calcAge = function () {
+//   return 2022 - this.age;
+// };

@@ -1,10 +1,8 @@
-let input = document.querySelector("#inputField"); // important
+let input = document.querySelector("#inputField");
 
-let buttonNumber = document.querySelectorAll(".buttonNumber"); // important
+let slider = document.querySelector("#vol");
 
-let slider = document.querySelector("#vol"); // important
-
-let calcBtns = document.querySelectorAll(".button"); //important
+let calcBtns = document.querySelectorAll(".button");
 
 let calcSymbols = ["+", "-", "/", "*", "."];
 
@@ -28,7 +26,10 @@ for (let item of calcBtns) {
     if (calcSymbols.includes(val)) {
       deleteit();
     }
-    if (input.value.length === 1 && calcSymbols.includes(val) || input.value === 0) {
+    if (
+      (input.value.length === 1 && calcSymbols.includes(val)) ||
+      input.value === 0
+    ) {
       input.value = "";
     }
     if (input.value === "NaN") {
@@ -65,12 +66,12 @@ input.addEventListener("input", function () {
 
 slider.addEventListener("input", clickHandler);
 
-document.body.classList.add('theme-1')
+document.body.classList.add("theme-1");
 
 function clickHandler(event) {
-  document.body.classList.remove('theme-1')
-  document.body.classList.remove('theme-2')
-  document.body.classList.remove('theme-3')
+  document.body.classList.remove("theme-1");
+  document.body.classList.remove("theme-2");
+  document.body.classList.remove("theme-3");
   let b = Number(event.target.value);
-  return document.body.classList.add(`theme-${b}`)
+  return document.body.classList.add(`theme-${b}`);
 }

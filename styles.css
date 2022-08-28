@@ -161,6 +161,10 @@ span {
   width: 16px;
   height: 16px;
 }
+
+.slider::-webkit-slider-thumb:hover {
+  background-color: var( --slider-equal-hover);
+}
 /* 
 manipulating the slider position and size */
 
@@ -187,6 +191,7 @@ input[type="range"] {
   border-radius: 10px;
   border: none;
   text-align: end;
+  padding-right: 34px;
 }
 #inputField:focus {
   outline: none;

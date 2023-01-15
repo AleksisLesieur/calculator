@@ -96,7 +96,7 @@ body.theme-3 {
 }
 body {
   background-color: var(--main-bg);
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 .container {
   /* color: var(--theme-2-color-1); */
